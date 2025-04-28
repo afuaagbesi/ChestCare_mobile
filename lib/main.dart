@@ -8,7 +8,7 @@ import 'providers/appointment_provider.dart';
 import 'screens/auth_wrapper.dart';
 import 'screens/login_screen.dart';
 import 'screens/register_screen.dart';
-import 'screens/dashboard_screen.dart';
+import 'screens/dashboard_screen.dart' as dashboard;
 import 'screens/landing_screen.dart';
 import 'screens/appointment_list_screen.dart';
 import 'screens/medication_list_screen.dart';
@@ -146,7 +146,7 @@ class ChestCareApp extends StatelessWidget {
             page = const HomeScreen();
             break;
           case '/dashboard':
-            page = const DashboardScreen();
+            page = const dashboard.DashboardScreen();
             break;
           case '/appointments':
             page = const AppointmentListScreen();
